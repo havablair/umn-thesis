@@ -1,0 +1,52 @@
+project:
+  type: book
+
+book:
+  title: Not used
+  author: Not used
+  chapters:
+    - index.qmd
+    - methods.qmd
+    - results.qmd
+    - discussion.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt 
+    #The class option “oneside” makes the margins of the even and odd pages 
+    #the same. The class option “open=any” allows chapters and parts to start
+    #on even or odd pages; the default is to only start chapters and parts
+    #on odd pages. 
+    classoption: ["oneside", "open=any"]
+    margin-left: "1.5in"
+    margin-right: "1in"
+    margin-top: "1in"
+    margin-bottom: "1.5in"
+    #mainfont: Times New Roman
+    template-partials: 
+      - "tex/before-body.tex" # overrides default template used by quarto
+      - "tex/_titlepage.tex"
+    include-in-header: 
+      - file: "tex/in-header.tex"
+      # https://stackoverflow.com/questions/73628198/change-title-headings-font-in-quarto-pdf-output
+      # disposition element means headers, section etc. see pg 
+      - text: \addtokomafont{disposition}{\rmfamily}
+    include-before-body: 
+      - file: "tex/acknowledgements.tex"
+      - file: "tex/dedication.tex"
+      - file: "tex/abstract.tex"
+    toc: true
+    toc-depth: 2
+    lof: true
+    lot: true
+  docx:
+    toc: true
+    
+
+
+
