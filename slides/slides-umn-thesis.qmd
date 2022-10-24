@@ -1,0 +1,92 @@
+---
+title: "Writing Your Thesis or Dissertation"
+subtitle: "with R Markdown*, GitHub, and Friends"
+author: "Hava Blair"
+format: revealjs
+editor: visual
+---
+
+## Welcome
+
+## About me
+
+-   Research in soil science and agriculture
+-   Year 4 PhD student
+-   Starting learning R in 2019
+
+## Motivations
+
+-   Practical: less time and tears on repetitive formatting, updating
+-   Philosophical: Your code and analysis IS a research output
+
+::: notes
+Practical: set up a structure that ultimately saves you time spent on tedious formatting, copy pasting, etc. and allows you to focus on your work.
+PLUS you are building skills to be able to work in many other formats (HTML! Presentations! Build your own website!)
+
+Philosophical or Professional?
+(Conduct of Research): Contribute to an ecosystem of reproducible, open science
+
+What does your research consist of?
+What are the outputs of your research?
+The analysis is PART of your research output, even if this is not something we explicitly see in published papers (although that is changing)
+:::
+
+## About today
+
+::: columns
+::: {.column width="50%"}
+**Part 1**
+
+-   Introduction & Overview
+-   Directory Structure
+-   Writing Component
+-   Code & Figures
+:::
+
+::: {.column width="50%"}
+**Part 2**
+
+-   `_quarto.yml`
+-   LaTeX stuff
+-   Workflow for sharing with advisors
+-   git & GitHub
+-   if time: additional Quarto formats
+:::
+:::
+
+## Tools
+
+-   [R](https://www.r-project.org/) (\>3.3.0) & [RStudio](https://www.rstudio.com/products/rstudio/download/#download) (v2022.07+)
+-   [Quarto](https://quarto.org/)\*
+    -   Is included with RStudio downloads v2022.07
+-   [git](https://git-scm.com/) & GitHub (git [instructions here](https://happygitwithr.com/install-git.html))
+-   And a little: LaTeX, Zotero, shell/command line
+
+## Conceptual model
+
+```{r}
+knitr::include_graphics("qmd-how-works.png")
+```
+
+::: aside
+image credit: https://quarto.org/docs/get-started/hello/rstudio.html
+:::
+
+## R packages used today
+
+```{r}
+#| eval: false 
+#| echo: true
+
+install.packages('palmerpenguins',
+                 'tidyverse',
+                 'knitr', 
+                 'gt',
+                 'gtsummary')
+```
+
+## A quick poll
+
+http://etc.ch/wRus
+
+Works on phone or computer!
