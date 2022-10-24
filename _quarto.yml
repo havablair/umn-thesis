@@ -1,15 +1,20 @@
 project:
   type: book
+ 
+execute: 
+  echo: false
+  warning: false
+  message: false
 
 book:
-  title: Not used
-  author: Not used
+  title: Thesis Title # change it in tex/_titlepage.tex, that's where it counts for PDF output
+  author: Your Name
   chapters:
     - index.qmd
-    - methods.qmd
-    - results.qmd
-    - discussion.qmd
-    - references.qmd
+    - 02-methods.qmd
+    - 03-results.qmd
+    - 04-discussion.qmd
+    - 99-references.qmd
 
 bibliography: references.bib
 
@@ -18,25 +23,33 @@ format:
     theme: cosmo
   pdf:
     documentclass: scrreprt 
-    #The class option “oneside” makes the margins of the even and odd pages 
-    #the same. The class option “open=any” allows chapters and parts to start
-    #on even or odd pages; the default is to only start chapters and parts
-    #on odd pages. 
-    classoption: ["oneside", "open=any"]
+    # class option “oneside” makes the margins of the even and odd pages 
+    # the same. 
+    # class option “open=any” allows chapters and parts to start
+    # on even or odd pages; the default is to only start chapters and parts
+    # on odd pages. 
+    # class option "listof=totoc" adds the list of tables and list of figures to TOC
+    # https://tex.stackexchange.com/questions/48509/insert-list-of-figures-in-the-table-of-contents
+    classoption: ["oneside", "open=any", "listof=totoc"]
     margin-left: "1.5in"
     margin-right: "1in"
     margin-top: "1in"
-    margin-bottom: "1.5in"
+    margin-bottom: "1.5in" # this is larger than technically needed, but it gets the page number in the footer >1in from the bottom (a requriement per UMN)
+    linestretch: 1.5
     #mainfont: Times New Roman
     template-partials: 
       - "tex/before-body.tex" # overrides default template used by quarto
-      - "tex/_titlepage.tex"
+      - "tex/_titlepage.tex" # custom title page
     include-in-header: 
       - file: "tex/in-header.tex"
-      # https://stackoverflow.com/questions/73628198/change-title-headings-font-in-quarto-pdf-output
-      # disposition element means headers, section etc. see pg 
+      - text: | 
+          \usepackage{setspace}
+          \doublespacing
+# https://stackoverflow.com/questions/73628198/change-title-headings-font-in-quarto-pdf-output
+# disposition element means headers, section etc. 
       - text: \addtokomafont{disposition}{\rmfamily}
     include-before-body: 
+      - file: "tex/copyright.tex"
       - file: "tex/acknowledgements.tex"
       - file: "tex/dedication.tex"
       - file: "tex/abstract.tex"
@@ -46,6 +59,7 @@ format:
     lot: true
   docx:
     toc: true
+    reference-doc: custom-reference.docx
     
 
 

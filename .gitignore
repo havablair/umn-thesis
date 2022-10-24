@@ -1,3 +1,9 @@
+# About this gitignore: I started with the "R" gitignore template from 
+# github's repo "A collection of .gitignore templates" 
+# https://github.com/github/gitignore/blob/main/R.gitignore 
+# Starting at line 59, I added a few more lines that are relevant
+# to this specific project (umn-thesis). Add additional lines as needed.
+
 # History files
 .Rhistory
 .Rapp.history
@@ -9,7 +15,7 @@
 # User-specific files
 .Ruserdata
 
-# quarto files 
+# quarto files
 *.quarto/
 
 # Example code in package build process
@@ -53,3 +59,5 @@ rsconnect/
 
 # my reference docs (PDFs, etc.)
 refs/
+/.quarto/
+*_book/
