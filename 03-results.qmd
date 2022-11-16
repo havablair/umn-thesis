@@ -51,6 +51,12 @@ penguins %>%
   ylab("Body Mass (g)") 
 ```
 
+```{r}
+source("scripts/myfig.R")
+
+testplot
+```
+
 Vivamus accumsan ipsum et consectetur lacinia.
 Integer ut enim nec purus bibendum viverra et sit amet libero.
 Aenean elementum scelerisque metus sed faucibus.

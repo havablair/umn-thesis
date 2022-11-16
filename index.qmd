@@ -2,21 +2,32 @@
 
 \pagenumbering{arabic}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+*Lorem ipsum dolor* sit amet, consectetur adipiscing elit.
 Sed sit amet dui eget mi varius dictum sit amet in justo.
-Aliquam euismod suscipit nunc placerat egestas.
+**Aliquam euismod suscipit** nunc placerat egestas.
 Vivamus dignissim, orci sit amet molestie scelerisque, lectus diam tempus mauris, ac venenatis leo orci sed nisl.
 Pellentesque vitae gravida mauris.
 Mauris elementum quam ut odio mattis, sed tincidunt justo vulputate.
+
+-   Bullet 1
+-   Bullet 2
+-   Bullet 3
+
+| Col1 | Col2 | Col3 |
+|------|------|------|
+| A    | B    | C    |
+| D    | E    | F    |
+| G    | H    | I    |
+
+: My Table
+
+## This is my heading
+
 Quisque vulputate orci et neque tincidunt convallis.
 Quisque at erat ultricies, aliquam nisi vitae, molestie erat.
 Vestibulum consectetur sem id lacus pellentesque placerat.
 Integer in vestibulum leo.
 Fusce pretium dolor in laoreet elementum.
-Curabitur lobortis blandit varius.
-Vestibulum tincidunt urna sed nunc bibendum, et varius ligula iaculis.
-Mauris hendrerit condimentum neque, elementum tincidunt nisl bibendum at.
-Praesent porttitor mi vel enim faucibus hendrerit.
 Nulla tincidunt enim urna, ut pellentesque arcu aliquet eget.
 Praesent sapien nulla, interdum ut nulla sed, varius imperdiet elit.
 
@@ -29,7 +40,7 @@ Proin tristique nunc leo, eget volutpat odio iaculis at.
 Morbi quis diam fringilla, pretium nibh sed, rutrum leo.
 Sed non eros maximus lorem semper vestibulum sed a eros.
 Etiam ligula lacus, tristique vitae semper et, efficitur vel sapien.
-Phasellus arcu velit, blandit lobortis dignissim sed, consequat eget urna.
+Phasellus arcu velit, blandi sed, consequat eget urna.
 Integer sit amet turpis sit amet velit congue maximus.
 
 Integer fermentum ligula velit, sed porta lacus scelerisque eget.
@@ -37,9 +48,7 @@ Donec feugiat in odio eget posuere.
 Nullam porta sem metus, et fringilla risus pulvinar malesuada.
 Morbi eget urna non ante porttitor venenatis.
 Vestibulum faucibus turpis ac dolor venenatis, sed vestibulum tellus mollis.
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean felis odio, blandit nec euismod nec, sagittis pellentesque eros.
-Suspendisse facilisis enim nec turpis auctor, sit amet consequat leo pharetra.
-Proin dapibus sit amet eros ut auctor.
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean felis odio, blandit nec euismod nec, sagittis pellendapibus sit amet eros ut auctor.
 Curabitur viverra pretium dolor sit amet scelerisque.
 Vivamus nulla felis, semper a volutpat eu, consectetur vel orci.
 Interdum et malesuada fames ac ante ipsum primis in faucibus.

@@ -17,6 +17,7 @@ This is a document created from markdown and executable code.
 See @knuth84 for additional discussion of literate programming.
 But since this is a methods section, we should probably say something about how we collected our data.
 We are working with data provided by @penguins20.
+I am writing this sentence with citation @abind and another [@williams_2014; @frew_2021].
 
 | Site Name | Locations | Dates of data collection |
 |-----------|-----------|--------------------------|
